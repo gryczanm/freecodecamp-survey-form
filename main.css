@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ff5252;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  color: white;
+  margin-top: 40px;
+}
+
+fieldset {
+  border: 0;
+}
+
+#title {
+  margin: 0;
+}
+
+#description {
+  margin: 10px;
+}
+
+form {
+  color: white;
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 30px 20px;
+  background-color: #b33939;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.form-group button {
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  padding: 12px;
+  color: #fff;
+  background-color: #37af65;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.form-group:nth-last-of-type(2) {
+  margin-bottom: 70px;
+}
+
+.form-group:nth-last-of-type(1) {
+  margin-bottom: 0;
+}

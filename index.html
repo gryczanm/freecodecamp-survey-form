@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Colgate Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our product</p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" name="age" min="18" max="100" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>How often do you brush your teeth?</p>
+        <select id="dropdown" name="frequency">
+          <option value="day">Every day</option>
+          <option value="week">Every week</option>
+          <option value="month">Every month</option>
+          <option value="never">What is toothbrush?</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Do you like to brush your teeth?</p>
+        <label><input name="user-opinion" value="definitely" type="radio" checked>Definitely</label>
+        <label><input name="user-opinion" value="maybe" type="radio" checked>Maybe</label>
+        <label><input name="user-opinion" value="not-sure" type="radio" checked>Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>What is your favourite flavour?</p>
+        <select id="most-like" name="mostLike" required>
+          <option disabled selected value>Please select an option</option>
+          <option value="mint">Mint</option>
+          <option value="apple">Apple</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="peach">Peach</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What is your favorite toothpaste?</p>
+        <label><input type="checkbox" id="coolgate" value="coolgate" name="prefer">Coolgate</label>
+        <label><input type="checkbox" id="sensodyne" value="sensodyne" name="prefer">Sensodyne</label>
+        <label><input type="checkbox" id="aquafresh" value="aquafresh" name="prefer">Aquafresh</label>
+        <label><input type="checkbox" id="pepsodent" value="pepsodent" name="prefer">Pepsodent</label>
+      </div>
+
+      <div class="form-group">
+        <p>Give us feedback on our toothpaste.</p>
+        <textarea id="feedback" name="feedback" rows="6" cols="50" placeholder="Enter your feedback here.."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
